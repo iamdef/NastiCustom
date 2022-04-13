@@ -361,6 +361,6 @@ a {
     transition: transform 400ms;
 }
 
-.mob {
+.mobile-scroll-pointer {
     display: none;
 }

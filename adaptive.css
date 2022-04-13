@@ -397,7 +397,7 @@
         position: unset;
     }
     
-    .mob {
+    .mobile-scroll-pointer {
         display: flex;
         justify-content: center;
         width: 100vw;
