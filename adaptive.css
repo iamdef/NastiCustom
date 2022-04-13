@@ -1,0 +1,410 @@
+/* ============== Adaptive ============== */
+
+/* Medium Devices / Desktops */
+@media only screen and (max-width: 992px) {
+    header div {
+        font-size: 3.5vw;
+    }
+
+    #navbar {
+        width: 50%;
+        font-size: 2.5vw;
+    }
+
+    .text {
+        font-size: 2.5vw;
+    }
+
+    #welcome-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #welcome-container h1 {
+        display: none;
+    }
+
+    #welcome-text {
+        width: 100%;
+        height: 21vh;
+    }
+
+    #gallery {
+        width: 70%;
+        height: 73vh;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(2, 36vh);
+        grid-template-areas:
+        "one three five"
+        "two four six"
+    }
+
+    #first-card {
+        grid-area: one;
+    }
+
+    #second-card {
+        grid-area: two;
+    }
+
+    #third-card {
+        grid-area: three;
+    }
+
+    #fourth-card {
+        grid-area: four;
+    }
+
+    #fifth-card {
+        grid-area: five;
+    }
+
+    #sixth-card {
+        grid-area: six;
+    }
+
+    #gallery:hover {
+        transform: scale(0.85);
+    }
+
+    .card img {
+        height: 100%;
+    }
+
+    #about-container {
+        flex-direction: column-reverse;
+    }
+
+    #about-text {
+        width: 100%;
+        height: 30%;
+    }
+
+    #photo {
+        width: 100%;
+        height: 70%;
+    }
+    
+    .photos {
+        width: 30%;
+        height: 75%;
+    }
+
+    #how-section h1 {
+        font-size: 3.25vw;
+    }
+
+    .how-text {
+        width: 60%;
+    }
+
+    .video {
+        width: 40%;
+    }
+    
+    video {
+        width: 80%;
+    }
+
+    #arrow-right {
+        top: 2%;
+        left: 3%;
+    }
+
+    #arrow-left {
+        left: 5%;
+    }
+
+    #how-image img {
+        width: 45%;
+    }
+
+    #contact-container {
+        font-size: 7vw;
+    }
+
+    #author {
+        font-size: 1.75vw;
+    }
+}
+   
+
+/* Small Devices / Tablets */
+@media only screen and (max-width: 768px) {
+    #gallery {
+        width: 90%;
+    }
+
+    .text {
+        font-size: 2.75vw;
+    }
+
+    .photos {
+        width: 35%;
+        height: 75%;
+    }
+
+    #how-section h1 {
+        height: 7vh;
+    }
+
+    .how-text {
+        width: 50%;
+    }
+
+    .video {
+        width: 50%;
+    }
+    
+    video {
+        width: 90%;
+    }
+
+    #how-image {
+        flex-direction: column;
+    }
+
+    #how-image img:last-child {
+        display: none;
+    }
+
+    #how-image img {
+        width: 85%;
+    }
+
+    #arrow-right {
+        top: 1%;
+    }
+
+}
+
+
+/* Extra Small Devices / Phones */
+@media only screen and (max-device-width: 480px) {
+    header {
+        flex-direction: column;
+        height: unset;
+    }
+
+    header div {
+        font-size: 10vw;
+    }
+    
+    #navbar {
+        display: none;
+    }
+
+    #navbar-mobile {
+        display: unset;
+        margin-top: 2vh;
+        width: 100%;
+        font-size: 5.25vw;
+    }
+    
+    #navbar-mobile ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #navbar-mobile ul li {
+        list-style: none;
+        font-family: 'Rubik Wet Paint', cursive;
+    }
+
+
+    #welcome-container {
+        margin-top: 2vh;
+        height: unset;
+        overflow-y: hidden;
+    }
+
+    #welcome-text {
+        width: 100%;
+        height: unset;
+        justify-self: flex-start;
+    }
+
+    #welcome-text .text {
+        font-size: 5vw;
+        padding: 0 2vw;
+    }
+
+    #gallery {
+        margin-top: 2vh;
+        width: 100%;
+        height: 50vh;
+        display: block;
+        transition: none;
+        scroll-snap-type: x mandatory;	
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+    }
+
+    .card:hover {
+        transform: none;
+        transition: none;
+    }
+    
+    #gallery:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .card {
+        height: 100%;
+        min-width: 100vw;
+        display: inline;
+        scroll-snap-align: start;
+        text-align: center;
+        position: relative;
+    }
+
+    .card img {
+        border-radius: 2%;
+        object-fit: contain;
+        margin: 0 1vw;
+    }
+    
+    
+    #about-section,
+    #welcome-section,
+    #how-section,
+    #contact-section {
+        height: unset;
+        margin-bottom: 2vh;
+    }
+    
+    #about-container {
+        height: auto;
+        justify-content: flex-start;
+    }
+    
+    #photo {
+        width: 100vw;
+        height: unset;
+    }
+
+    #about-text {
+        width: 100vw;
+        height: unset;
+        font-size: 7vw;
+        justify-content: flex-start;
+    }
+
+    #about-text .text {
+        font-size: 5vw;
+        margin-bottom: 3vh;
+    }
+
+    #photo-container {
+        width: 100vw;
+        height: unset;
+        display: flex;
+        transition: unset;
+    }
+
+    .photos {
+        width: 80%;
+        height: unset;
+    }
+
+    .photos img {
+        width: 100%;
+        height: unset;
+        object-fit: contain;
+    }
+
+    #second-photo,
+    #third-photo,
+    #fourth-photo,
+    #how-image,
+    .arrow {
+        display: none;
+    }
+
+    #first-photo {
+        position: unset;
+        flex-shrink: unset;
+        z-index: unset;
+        bottom: unset;
+        left: unset;
+        top: unset;
+        right: unset;
+    }
+
+    #first-photo:hover {
+        z-index: unset;
+        transform: unset;
+        transition: unset;
+    }
+
+    #photo-container:hover {
+        transform: unset;
+        transition: unset;
+    }
+
+    #how-section h1 {
+        font-size: 7vw;
+        height: unset;
+    }
+    
+    .how-text .text {
+        font-size: 5vw;
+        padding: 2vw;
+        text-align: center;
+    }
+
+    .how-text {
+        margin: 0;
+        width: 100%;
+        height: unset;
+    }
+
+    .video {
+        height: unset;
+        width: 100vw;
+    }
+
+    video {
+        width: unset;
+        height: unset;
+    }
+
+    #how-container {
+        width: 100%;
+        font-size: 3vw;
+        flex-direction: column-reverse;
+    }
+
+    #contact-container {
+        height: auto;
+        font-size: 12vw;
+        justify-content: flex-start;
+    }
+
+    #author {
+        padding-top: 5vh;
+        font-size: 3.75vw;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+    }
+
+    #author span {
+        padding: unset;
+        position: unset;
+    }
+    
+    .mob {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        text-align: center;
+        font-size: 5vw;
+        position: relative;
+        bottom: 0;
+    }
+
+}
