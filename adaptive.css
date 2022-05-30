@@ -315,7 +315,8 @@
         height: unset;
         object-fit: contain;
     }
-
+    
+    #first-photo,
     #second-photo,
     #third-photo,
     #fourth-photo,
